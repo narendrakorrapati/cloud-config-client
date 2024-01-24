@@ -13,6 +13,7 @@ public class DataSourceConfig {
 	@Value("${spring.datasource.password}")
 	private String password;
 	
+	private String jpaShowSql;
 	
 	public String getUrl() {
 		return url;
@@ -32,5 +33,12 @@ public class DataSourceConfig {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+	public String getJpaShowSql() {
+		return jpaShowSql;
+	}
+	public void setJpaShowSql(String jpaShowSql) {
+		this.jpaShowSql = jpaShowSql;
+	}
+	
 	
 }
